@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Code Editor</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">Web Code Editor</h1>
+            <div class="controls">
+                <select id="language-select" class="language-select">
+                    <option value="python">Python</option>
+                    <option value="cpp">C++</option>
+                    <option value="java">Java</option>
+                </select>
+                <button id="run-button" class="button-run">
+                    Run Code
+                </button>
+            </div>
+        </div>
+
+        <div class="relative">
+            <textarea id="code-input" class="code-editor" placeholder="Start typing your code here..."></textarea>
+        </div>
+
+        <div class="output-container">
+            <h2 class="output-title">Output</h2>
+            <pre id="output-area" class="output-area"></pre>
+        </div>
+    </div>
+
+    <script src="..//static/script.js"></script>
+</body>
+
+</html>
